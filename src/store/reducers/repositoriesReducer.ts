@@ -4,7 +4,10 @@ import { Action } from '../actions/actionsIndex';
 interface RepositoriesState {
   loading: boolean;
   error: string | null;
-  data: string[];
+  data: {
+    name: string;
+    repository: string;
+  }[];
 }
 
 const initialState = {
